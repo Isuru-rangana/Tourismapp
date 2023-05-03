@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), MyAdapter.MyClickListener {
         nameList = arrayOf(
             "Jobs",
             "Events",
-            "Company",
+            "Hotels",
             "My profile"
         )
 
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity(), MyAdapter.MyClickListener {
         when(position){
      //       0 -> startActivity(Intent(this,Jobspage::class.java))
       //      1 -> startActivity(Intent(this,eventspage::class.java))
-       //     2 -> startActivity(Intent(this,companypage::class.java))
+            2 -> startActivity(Intent(this,HotelMainActivity::class.java))
             3 -> startActivity(Intent(this,LocationActivity::class.java))
         }
     }

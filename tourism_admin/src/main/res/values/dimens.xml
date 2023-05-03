@@ -20,8 +20,22 @@
     <dimen name="dashboardBtnsIVSize">48dp</dimen>
     <dimen name="dashboardBtnsIVTopBotPadding">8dp</dimen>
 
-
-
+    <!--Binod-->
+    <dimen name="hotelSize">45dp</dimen>
+    <dimen name="hotel2Size">18dp</dimen>
+    <dimen name="book_btn">14dp</dimen>
+    <dimen name="description">14dp</dimen>
+    <dimen name="enter_booking">34dp</dimen>
+    <dimen name="booking_data">18dp</dimen>
+    <dimen name="booking_details">34dp</dimen>
+    <dimen name="preview_data">16dp</dimen>
+    <dimen name="amount_to_pay">24dp</dimen>
+    <dimen name="amount">34dp</dimen>
+    <dimen name="confirm_book">14dp</dimen>
+    <dimen name="enter_hotel">24dp</dimen>
+    <dimen name="hotel_data">18dp</dimen>
+    <dimen name="view_hotel_data">18dp</dimen>
+    <dimen name="table_data">18dp</dimen>
 
 
 

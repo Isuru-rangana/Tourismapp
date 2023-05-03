@@ -63,4 +63,6 @@ dependencies {
 
     //Progress Dialog Library
     implementation 'com.jpardogo.googleprogressbar:library:1.2.0'
+
+
 }

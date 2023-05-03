@@ -5,13 +5,15 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.tourism_admin.model.DetailActivity
-
+import com.example.tourism_admin.model.UploadActivity
+import com.example.tourism_admin.model.DeleteActivity
 
 class MyAdapter1(private val context: Context, private var locationList: List<DataClass>) : RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -32,6 +34,17 @@ class MyAdapter1(private val context: Context, private var locationList: List<Da
             intent.putExtra("Priority", locationList[holder.adapterPosition].locationPriority)
             context.startActivity(intent)
         }
+        holder.recUpdate.setOnClickListener{
+            val intent1 = Intent(context, UploadActivity::class.java)
+            context.startActivity(intent1)
+        }
+
+        holder.recDelete.setOnClickListener{
+            val intent2 = Intent(context,DeleteActivity ::class.java)
+            context.startActivity(intent2)
+        }
+
+
     }
     override fun getItemCount(): Int {
         return locationList.size
@@ -40,6 +53,8 @@ class MyAdapter1(private val context: Context, private var locationList: List<Da
         locationList = searchList
         notifyDataSetChanged()
     }
+
+
 }
 class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     var recImage: ImageView
@@ -47,11 +62,15 @@ class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     var recDesc: TextView
     var recPriority: TextView
     var recCard: CardView
+    var recUpdate:Button
+    var recDelete:Button
     init {
         recImage = itemView.findViewById(R.id.recImage)
         recTitle = itemView.findViewById(R.id.recTitle)
         recDesc = itemView.findViewById(R.id.recDesc)
         recPriority = itemView.findViewById(R.id.recPriority)
         recCard = itemView.findViewById(R.id.recCard)
+        recUpdate = itemView.findViewById(R.id.recUpdate)
+        recDelete = itemView.findViewById(R.id.recDelete)
     }
 }

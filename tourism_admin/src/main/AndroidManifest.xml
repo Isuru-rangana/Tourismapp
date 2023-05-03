@@ -8,7 +8,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tourismapp">
         <activity
-            android:name=".UpdateActivity"
+            android:name=".model.DeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".model.UpdateActivity"
             android:exported="false" />
         <activity
             android:name=".model.LocationActivity"

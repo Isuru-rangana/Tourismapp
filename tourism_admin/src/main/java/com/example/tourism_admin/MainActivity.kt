@@ -44,17 +44,17 @@ class MainActivity : AppCompatActivity(), MyAdapter.MyClickListener {
         recyclerView.setHasFixedSize(true)
 
         imgId = arrayOf(
-            R.drawable.jobimages,
-            R.drawable.events,
-            R.drawable.companypng,
-            R.drawable.profile
+            R.drawable.food,
+            R.drawable.hotel,
+            R.drawable.feedback,
+            R.drawable.location
         )
 
         nameList = arrayOf(
-            "Jobs",
-            "Events",
-            "Company",
-            "My profile"
+            "Food",
+            "Hotel",
+            "Feedback",
+            "Location "
         )
 
         newArrayList = arrayListOf()

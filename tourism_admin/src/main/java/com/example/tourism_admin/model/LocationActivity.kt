@@ -61,11 +61,15 @@ class LocationActivity : AppCompatActivity() {
             override fun onCancelled(error: DatabaseError) {
                 dialog.dismiss()
             }
+
+
         })
         binding.fab.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@LocationActivity, UploadActivity::class.java)
             startActivity(intent)
         })
+
+
         binding.search.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
                 return false

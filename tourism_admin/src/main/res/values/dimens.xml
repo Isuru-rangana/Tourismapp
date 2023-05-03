@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="add_Fab_margin_bottom">48dp</dimen>
+    <dimen name="add_Fab_margin_right">48dp</dimen>
+
+    <!-- Other activities editText drawable padding -->
+
+
+    <!--View Profile-->
+    <dimen name="dividerLeftRightMargins">4dp</dimen>
+    <dimen name="dividerTopMargin">4dp</dimen>
+    <dimen name="dividerBottomMargin">4dp</dimen>
+    <dimen name="detailsPadding">12dp</dimen>
+
+
+
+    <!-- DashBoard dimens -->
+    <dimen name="dashboardBtnsIVSize">48dp</dimen>
+    <dimen name="dashboardBtnsIVTopBotPadding">8dp</dimen>
+
+
+
+
+
+
+
+
+
+</resources>

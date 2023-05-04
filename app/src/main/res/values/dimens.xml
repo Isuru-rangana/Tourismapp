@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="eTdrawablePadding">10dp</dimen>
+
+    <dimen name="signUpformEditTextTopMargin">4dp</dimen>
+
+</resources>

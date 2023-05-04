@@ -1,5 +1,7 @@
 package com.example.tourism_admin
 
+import android.media.Image
+
 class DataClass (
    //var dataTitle: String? = null
   /*  var dataDesc: String? = null
@@ -17,5 +19,6 @@ class DataClass (
     var locationId: String? = null,
     var locationTitle: String? = null,
     var locationDesc: String? = null,
-    var locationPriority: String? = null
+    var locationPriority: String? = null,
+var locationImage: String?=null
     )

@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         when(position){
             //       0 -> startActivity(Intent(this,Jobspage::class.java))
             //      1 -> startActivity(Intent(this,eventspage::class.java))
-            //     2 -> startActivity(Intent(this,companypage::class.java))
+            2 -> startActivity(Intent(this,ViewFeedBackActivity::class.java))
           3 -> startActivity(Intent(this, LocationActivity::class.java))
         }
     }

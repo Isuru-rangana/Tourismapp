@@ -12,5 +12,9 @@
     <string name="dashboard_notification">Notifications</string>
     <string name="dashboard_contactUs">Contact us</string>
     <string name="dashboardRequestsBtn">My Requests</string>
+    <string name="title_FB">Feedback and Reviews</string>
+    <string name="hint_FB">Enter Your Thoughts Here</string>
+    <string name="hint_list">Review // Feedback</string>
+    <string name="hint_fbLocation">Which Location would you like to Review</string>
 
 </resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:background="@color/green_back"
+        android:backgroundTint="@color/green_back"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:text="@string/title_FB"
+        android:textSize="34sp" />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/green_back"
+        android:src="@drawable/sigiriya" />
+
+
+    <EditText
+        android:id="@+id/location_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:alpha="0.9"
+        android:background="@color/teal_200"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_fbLocation"
+        android:inputType="textMultiLine"
+        android:lines="1"
+        android:paddingLeft="15dp" />
+    <EditText
+        android:id="@+id/feedback_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:alpha="0.9"
+        android:background="@color/teal_200"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_FB"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:paddingLeft="75dp" />
+
+    <Button
+        android:id="@+id/submit_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        app:cornerRadius = "10dp"
+        android:text="Submit" />
+    <Button
+        android:id="@+id/update_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius = "10dp"
+        android:layout_marginRight="80dp"
+        android:text="Update" />
+    <Button
+        android:id="@+id/delete_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius = "10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:text="Delete" />
+
+
+
+</LinearLayout>

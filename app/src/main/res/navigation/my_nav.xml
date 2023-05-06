@@ -15,4 +15,9 @@
         android:name="com.example.tourismapp.CreateAccountActivity"
         android:label="activity_create_account"
         tools:layout="@layout/activity_create_account" />
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.example.tourismapp.splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
 </navigation>

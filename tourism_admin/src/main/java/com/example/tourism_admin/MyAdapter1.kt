@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide
 import com.example.tourism_admin.model.DetailActivity
 import com.example.tourism_admin.model.UploadActivity
 import com.example.tourism_admin.model.DeleteActivity
+import com.example.tourism_admin.model.UpdateActivity
 
 class MyAdapter1(private val context: Context, private var locationList: List<DataClass>) : RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -35,7 +36,7 @@ class MyAdapter1(private val context: Context, private var locationList: List<Da
             context.startActivity(intent)
         }
         holder.recUpdate.setOnClickListener{
-            val intent1 = Intent(context, UploadActivity::class.java)
+            val intent1 = Intent(context, UpdateActivity::class.java)
             context.startActivity(intent1)
         }
 

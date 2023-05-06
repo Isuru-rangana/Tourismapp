@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginBottom="15dp"
+    android:background="#00BCD4">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="349dp"
+        android:layout_height="318dp"
+        android:backgroundTint="#00BCD4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/h_name"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:background="@android:color/black"
+            android:gravity="center_horizontal"
+            android:text="@string/marino"
+            android:textColor="#F1EDED"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:background="#00BCD4"
+            android:text="Galle Road, Wadduwa"
+            android:textSize="@dimen/description" />
+
+        <ImageView
+            android:id="@+id/h_image"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:background="#00BCD4"
+            android:cropToPadding="true"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:background="#00BCD4"
+            android:backgroundTint="#00BCD4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Single Bed Room ($)" />
+
+            <TextView
+                android:id="@+id/single_bed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#00BCD4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Double Bed Room ($)" />
+
+            <TextView
+                android:id="@+id/double_bed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/book_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="#06BAD1"
+            android:backgroundTint="#D1A215"
+            android:onClick="showBookingForm"
+            android:text="@string/bookBtn"
+            android:textColor="#050505"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

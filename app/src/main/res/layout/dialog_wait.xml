@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:text="Please Wait..."
         android:textColor="@color/black"
-        android:textSize="10dp"/>
+        android:textSize="18dp"/>
 
     <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
         android:id="@+id/google_progress"

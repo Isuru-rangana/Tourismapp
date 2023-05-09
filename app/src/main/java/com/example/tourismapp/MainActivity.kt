@@ -8,6 +8,7 @@ import androidx.navigation.NavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.tourismapp.Food.FoodActivity
 import com.example.tourismapp.model.LocationActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -66,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     fun onClick(position: Int){
         when(position){
-            //       0 -> startActivity(Intent(this,Jobspage::class.java))
+                  0 -> startActivity(Intent(this,FoodActivity::class.java))
             //      1 -> startActivity(Intent(this,eventspage::class.java))
             //     2 -> startActivity(Intent(this,companypage::class.java))
           3 -> startActivity(Intent(this, LocationActivity::class.java))

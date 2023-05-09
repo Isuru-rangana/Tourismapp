@@ -9,6 +9,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.tourism_admin.Food.FoodActivity
 import com.example.tourism_admin.model.DetailActivity
 import com.example.tourism_admin.model.LocationActivity
 import com.example.tourism_admin.model.UploadActivity
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity(), MyAdapter.MyClickListener {
 
     override fun onClick(position: Int){
         when(position){
-     //       0 -> startActivity(Intent(this,Jobspage::class.java))
+           0 -> startActivity(Intent(this,FoodActivity::class.java))
       //      1 -> startActivity(Intent(this,eventspage::class.java))
        //     2 -> startActivity(Intent(this,companypage::class.java))
             3 -> startActivity(Intent(this,LocationActivity::class.java))

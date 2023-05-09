@@ -8,6 +8,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tourismapp">
         <activity
+            android:name=".Food.FoodUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Food.FoodDeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Food.FoodUploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Food.DetailActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Food.FoodActivity"
+            android:exported="false" />
+        <activity
             android:name=".model.DeleteActivity"
             android:exported="false" />
         <activity
@@ -28,7 +43,6 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

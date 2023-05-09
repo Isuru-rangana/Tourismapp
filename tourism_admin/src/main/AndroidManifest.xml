@@ -8,6 +8,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tourismapp">
         <activity
+            android:name=".AdminViewHotels"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityHotel"
+            android:exported="false" />
+        <activity
             android:name=".model.DeleteActivity"
             android:exported="false" />
         <activity
@@ -28,7 +37,6 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

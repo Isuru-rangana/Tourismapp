@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
     fun onClick(position: Int){
         when(position){
             //       0 -> startActivity(Intent(this,Jobspage::class.java))
-            //      1 -> startActivity(Intent(this,eventspage::class.java))
+               1 -> startActivity(Intent(this,TouristViewHotels::class.java))
             //     2 -> startActivity(Intent(this,companypage::class.java))
           3 -> startActivity(Intent(this, LocationActivity::class.java))
         }

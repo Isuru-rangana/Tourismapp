@@ -37,4 +37,21 @@
     <color name="dashboard_btn2">#ffffff</color>
 
 
+    <!--Binod-->
+
+    <color name="hotelColor">#FFEB3B</color>
+    <color name="hotel2Color">#FFFFFF</color>
+    <color name="book_btn">#FDFDFD</color>
+    <color name="enter_booking">#9C27B0</color>
+    <color name="hotel_id">#FF5722</color>
+    <color name="name">#32DACDCD</color>
+    <color name="amounttopay">#3F51B5</color>
+    <color name="amount">#4CAF50</color>
+    <color name="booking_details">#9C27B0</color>
+    <color name="view_hotel">#E91E63</color>
+    <color name="room_prices">#F44336</color>
+    <color name="table_head">#E60733</color>
+    <color name="Hname">#110C0C</color>
+
+
 </resources>

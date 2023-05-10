@@ -22,22 +22,32 @@ class MyAdapter1(private val context: Context, private var locationList: List<Da
         return MyViewHolder(view)
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        //Glide.with(context).load(locationList[position].locationImage)
-        //  .into(holder.recImage)
+        Glide.with(context).load(locationList[position].locationImage)
+          .into(holder.recImage)
         holder.recTitle.text = locationList[position].locationTitle
         holder.recDesc.text = locationList[position].locationDesc
         holder.recPriority.text = locationList[position].locationPriority
         holder.recCard.setOnClickListener {
             val intent = Intent(context, DetailActivity::class.java)
-            //intent.putExtra("Image", locationList[holder.adapterPosition].locationImage)
+            intent.putExtra("Image", locationList[holder.adapterPosition].locationImage)
             intent.putExtra("Description", locationList[holder.adapterPosition].locationDesc)
             intent.putExtra("Title", locationList[holder.adapterPosition].locationTitle)
             intent.putExtra("Priority", locationList[holder.adapterPosition].locationPriority)
             context.startActivity(intent)
         }
         holder.recUpdate.setOnClickListener{
-            val intent1 = Intent(context, UpdateActivity::class.java)
+            val intent1 = Intent(context, UpdateActivity::class.java).also {
+                it.putExtra("locationId", locationList[holder.adapterPosition].locationId)
+                it.putExtra("locationTitle", locationList[holder.adapterPosition].locationTitle)
+                it.putExtra("locationDesc", locationList[holder.adapterPosition].locationDesc)
+                it.putExtra("locationPriority", locationList[holder.adapterPosition].locationPriority)
+            }
             context.startActivity(intent1)
+            /*intent = Intent(applicationContext, DriverProfileUpdateActivity::class.java).also {
+                it.putExtra("name", user.UserName)
+                it.putExtra("email", user.UserEmail)
+                it.putExtra("mobile", user.UserMobile)
+                startActivity(it)*/
         }
 
         holder.recDelete.setOnClickListener{

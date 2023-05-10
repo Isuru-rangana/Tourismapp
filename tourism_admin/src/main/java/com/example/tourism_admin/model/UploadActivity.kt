@@ -8,6 +8,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tourism_admin.DataClass
+import com.example.tourism_admin.R
 import com.example.tourism_admin.databinding.ActivityUploadBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -41,7 +42,7 @@ class UploadActivity : AppCompatActivity() {
             activityResultLauncher.launch(photoPicker)
         }
         binding.saveButton.setOnClickListener {
-            uploadData()
+            saveData()
 
             /*val title = binding.uploadTitle.text.toString()
             val desc = binding.uploadDesc.text.toString()
@@ -64,7 +65,7 @@ class UploadActivity : AppCompatActivity() {
 */
         }
     }
-    /*private fun saveData(){
+    private fun saveData(){
         val storageReference = FirebaseStorage.getInstance().reference.child("Task Images")
             .child(uri!!.lastPathSegment!!)
         val builder = AlertDialog.Builder(this@UploadActivity)
@@ -82,11 +83,12 @@ class UploadActivity : AppCompatActivity() {
         }.addOnFailureListener {
             dialog.dismiss()
         }
-    }*/
+    }
     private fun uploadData(){
         val title = binding.uploadTitle.text.toString()
         val desc = binding.uploadDesc.text.toString()
         val priority = binding.uploadPriority.text.toString()
+
 
         databaseRef = FirebaseDatabase.getInstance().getReference("location")
 
@@ -94,7 +96,7 @@ class UploadActivity : AppCompatActivity() {
         var locationId = databaseRef.push().key!!
 
         //create object
-        val dataClass = DataClass(locationId,title, desc, priority)
+        val dataClass = DataClass(locationId,title, desc, priority,imageURL)
         val currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().time)
 
         //push to databse
